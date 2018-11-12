@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.assignment2;
+package assignment2;
 import java.io.*;
 //import java.io.net.*;
 import java.net.Socket;
@@ -23,7 +23,7 @@ public class Server {
     PrintWriter output;
     
     public void start() throws IOException{
-        System.out.println("Connection starting on port" + i.getPort());
+        System.out.println("Connection starting on port " + i.getPort());
         serversocket = new ServerSocket(i.getPort());
         client = serversocket.accept();
         System.out.println("Waiting for connection from client");
@@ -60,13 +60,6 @@ public class Server {
         output.close();
     }   
     
-    public static void main(String[] args){
-        Server server = new Server();
-        try{
-            server.start();
-        } catch (IOException e){
-            e.printStackTrace();
-        }
-    }
+
 }
     

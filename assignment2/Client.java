@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.assignment2;
+package assignment2;
 import java.io.*;
 //import java.io.net.*;
 import java.net.Socket;
@@ -56,16 +56,6 @@ public class Client {
 
     }
 
-    public static void main(String args[]){
-        Client client = new Client();
-        try {
-            client.startClient();
-        } catch (UnknownHostException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+    public void startClient() {
     }
 }
